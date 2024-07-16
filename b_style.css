@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+}
+.sp{
+    background-image: url(/img/wh.png);
+}
+.class{
+    display:flex;
+    /*border:2px solid blue;*/
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 0;
+}
+.class img{
+    border-radius: 12px;
+}
+
+.text{
+    margin: 0px 12px;
+    padding-top: 12vh;
+    text-align: center;
+
+}
+
+.class:hover{
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,1.19);
+}
+
+@media(max-width: 700px){
+    .class{
+        flex-direction: column;
+    }
+    .blogImg{
+        padding-top: 7px;
+        text-align: center;
+    }
+    .text{
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+    }
+}

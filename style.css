@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    height: 13vh;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h1{
+    padding-left: 15px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.nav .bi{
+    display: none;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1.5px;
+    background-color: aqua;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.main{
+    height: 87vh;
+    background-image: url(corridor-of-shopping-mall.jpg);
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box{
+    width: 85%;
+    color: azure;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h2{
+    margin-bottom: 5vh;
+}
+.main button{
+    color:white;
+    background:transparent;
+    border: 2.9px solid grey;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 13px;
+    transition: 0.5s;
+}
+
+.main button:hover{
+    background-color: gray;
+}
+
+@media(max-width: 700px){
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+        position: absolute;
+        background: black;
+        padding: 20px;
+        height: 30vh;
+        width: 150px;
+        z-index: -10000000;
+        transition: 0.5ms;
+        top: 0;
+        right: 0;
+        text-align: left;
+    }
+    .nav .bi{
+        display: block;
+        margin: 15px;
+    }
+}

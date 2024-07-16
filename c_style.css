@@ -1,0 +1,48 @@
+.contact{
+    background-image: url("con.jpg");
+    color:black;
+    /* background-color: #190482; */
+    height: 25vh;
+    text-align: center;
+    padding-top: 25px;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+.details{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    z-index: 1;
+    transform: translate(0%,-24%);
+}
+.row{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.col{
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 18px 20px;
+    text-align: center;
+    width: 27%;
+    height: 35vh;
+    transition: 0.5s;
+}
+.col h4{
+    margin-top: 13px;
+    margin-bottom: 6px;
+}
+.col p{
+    margin: 10px 0;
+}
+.col:hover{
+    box-shadow: 0 0 12px 0 salmon;
+}
+@media(max-width:700px){
+    pre{
+        width:fit-content;
+    }
+}
